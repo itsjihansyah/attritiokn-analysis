@@ -15,6 +15,7 @@ The dataset used is from Kaggle. It contains 4410 entries (rows) and 31 columns 
 * Time: Contains the duration of the employee’s working time.
 
 ## Business Questions
+* What is the average job satisfaction level across different departments?
 * How does the educational background of employees vary by department?
 * What are the five highest employees’ working years?
 * What is the distribution of employees by marital status?
@@ -25,3 +26,12 @@ The dataset used is from Kaggle. It contains 4410 entries (rows) and 31 columns 
 * How do the average years with current managers affect attrition?
 * How do managerial performance ratings and job involvement levels relate to employee attrition?
 Attrition mentioned in all business questions is the prediction score of attrition
+
+## Data Relationship
+In Power BI, we adopted a star schema approach to schema design. This involved organizing the dataset into a central fact table surrounded by multiple dimension tables, resembling the shape of a star.
+* Fact Table:
+  At the heart of the star schema lies the fact table, which contains quantitative metrics and transactional data. The "General" table is the primary fact table. The General tables changed to “FactGeneral”
+* Dimension Tables:
+  Dimension tables support the fact table, which provides descriptive context and additional attributes to enrich the analysis. These dimension tables cover the EmployeeSurvey, ManagerSurvey, and Time tables. Those table changed to “DimEmployeeSurvey”, “DimManagerSurvey”, and “DimTime”.
+![Screenshot 2024-11-16 123826](https://github.com/user-attachments/assets/083d21a7-d472-4a6c-a638-24680322ab9d)
+
