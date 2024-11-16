@@ -13,3 +13,15 @@ The dataset used is from Kaggle. It contains 4410 entries (rows) and 31 columns 
 * Manager Survey: Contains employees' feedback about their managers.
 * Employee Survey: Contains survey results from employees.
 * Time: Contains the duration of the employee’s working time.
+
+## Business Questions
+* How does the educational background of employees vary by department?
+* What are the five highest employees’ working years?
+* What is the distribution of employees by marital status?
+* What is the overall predicted attrition rate of the company?
+* Which department has the highest total attrition?
+* How does job satisfaction impact attrition?
+* What is the impact of marital status on attrition?
+* How do the average years with current managers affect attrition?
+* How do managerial performance ratings and job involvement levels relate to employee attrition?
+Attrition mentioned in all business questions is the prediction score of attrition
